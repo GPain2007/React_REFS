@@ -11,7 +11,7 @@ export default function TimerChallenge({ title, time }) {
 
   if (timeRemaining <= 0) {
     clearInterval(timer.current);
-    setTimeRemaining(time * 1000);
+
     dialog.current.open();
   }
 
